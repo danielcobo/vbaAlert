@@ -1,4 +1,4 @@
-Attribute VB_Name = "alert_"
+Attribute VB_Name = "VBA_require_alert"
 Option Explicit
 
 'Display a message
@@ -23,7 +23,7 @@ End Function
 Function alertYesNo(str As String) As Boolean
     Dim result As Integer
     result = MsgBox(str, vbQuestion + vbYesNo + vbApplicationModal + vbMsgBoxSetForeground)
-    
+
     If result = 6 Then
         alertYesNo = True
     Else   'result = 7
