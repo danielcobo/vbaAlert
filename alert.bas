@@ -44,3 +44,11 @@ Function alertOKCancel(str As String) As Boolean
         alertOKCancel = False
     End If
 End Function
+
+'Input prompt
+'------------
+'Returns value user inputed
+'or "" if canceled or left empty by user
+Function alertInput(strMsg As String) As String
+    alertInput = InputBox(strMsg)
+End Function
